@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const state=useSelector((state)=>state.cart.cart)
   return (
     <>
       <style jsx>{`
@@ -41,6 +43,9 @@ const Navbar = () => {
           </Link>
           <Link href="/services" className="text-none">
             <li>Services</li>
+          </Link>
+          <Link href="/cart">
+          <li>Cart-items {state.length}</li>
           </Link>
         </ul>
       </div>
