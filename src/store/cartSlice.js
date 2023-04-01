@@ -9,7 +9,7 @@ export const cartSlice = createSlice({
 addtocart:function(state,action){
     // console.log(state)
     // console.log(action.payload)
-    state.cart.push(action.payload)
+    state.cart=[...state.cart,action.payload];
 },
 removecart:function(state,action){
 
