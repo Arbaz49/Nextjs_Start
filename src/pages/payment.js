@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React from 'react'
 
 const Payment = () => {
@@ -313,12 +314,15 @@ input[type="radio"] {
 `
 
 }</style>
+<Head>
+    <title>payment page</title>
+</Head>
       <div className="container d-lg-flex">
         <div className="box-1 bg-light user">
             <div className="d-flex align-items-center mb-3">
                 <img src="https://images.pexels.com/photos/4925916/pexels-photo-4925916.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                     className="pic rounded-circle" alt="" />
-                <p className="ps-2 name">Oliur</p>
+                <p className="ps-2 name">Arbaz</p>
             </div>
             <div className="box-inner-1 pb-3 mb-3 ">
                 <div className="d-flex justify-content-between mb-3 userdetails">
